@@ -1,0 +1,425 @@
+body {
+  margin: 0px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+header {
+  background-image: url("images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
+header svg {
+  margin-top: 130px;
+}
+
+header h1 {
+  width: 70vw;
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  margin: 70px 0px 10px 0px;
+}
+
+header p {
+  width: 45vw;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 10px;
+}
+
+header .buttonDonwIOS {
+  margin: 30px 20px 17px 0px;
+  background-color: #fff;
+  border: 1px solid #26bba5;
+  height: 48px;
+  width: 300px;
+  border-radius: 35px;
+  background-color: #26bba5;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+  font-size: 15px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 2px 2px 3px #23af9a;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+header .buttonDonwMac {
+  margin: 10px 0px 10px 0px;
+  background-color: #fff;
+  border: 1px solid #6074ff;
+  height: 48px;
+  width: 300px;
+  border-radius: 35px;
+  background-color: #6074ff;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+  font-size: 15px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 2px 2px 3px #5d6ee2;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1,
+h2 {
+  width: 67vw;
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  margin: 10px 0px 10px 0px;
+  font-size: 30px;
+}
+
+main #h1KeepTrak {
+  margin: 130px 0px 10px 0px;
+}
+
+main p {
+  width: 45vw;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 5px 0px 40px 0px;
+}
+
+main img {
+  width: 60vw;
+  margin: 15px 0px 35px 0px;
+}
+
+main h2 {
+  font-size: 25px;
+  margin: 10px 0px 5px 0px;
+  /* margin: 5px; */
+}
+
+main #clipboard {
+  margin: 90px 0px 10px 0px;
+}
+
+main #divices {
+  width: 65vw;
+  margin: 10px 0px 80px 0px;
+}
+
+main #workflow {
+  font-size: 22px;
+  margin: 40px 0px 10px 0px;
+}
+
+main #google {
+  width: 120px;
+  /* margin: 30px 0px 30px 0px; */
+  margin: 80px 0px 30px 0px;
+}
+
+main #ibm {
+  width: 90px;
+  /* margin: 30px 0px 30px 0px; */
+  margin: 20px 0px 30px 0px;
+}
+
+main #microsoft {
+  width: 110px;
+  /* margin: 30px 0px 30px 0px; */
+  margin: 20px 0px 30px 0px;
+}
+
+main #microsoft {
+  width: 110px;
+  /* margin: 30px 0px 30px 0px; */
+  margin: 20px 0px 30px 0px;
+}
+
+main #hp {
+  width: 90px;
+  /* margin: 30px 0px 30px 0px; */
+  margin: 20px 0px 30px 0px;
+}
+
+main #vg {
+  width: 80px;
+  /* margin: 30px 0px 30px 0px; */
+  margin: 20px 0px 120px 0px;
+}
+
+main .buttonDonwIOS {
+  margin: 1px 0px 17px 0px;
+  background-color: #fff;
+  border: 1px solid #26bba5;
+  height: 48px;
+  width: 300px;
+  border-radius: 35px;
+  background-color: #26bba5;
+  font-weight: bold;
+  color: rgb(243, 241, 241);
+  font-size: 15px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 2px 2px 3px #23af9a;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+main .buttonDonwMac {
+  margin: 10px 0px 160px 0px;
+  background-color: #fff;
+  border: 1px solid #6074ff;
+  height: 48px;
+  width: 300px;
+  border-radius: 35px;
+  background-color: #6074ff;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+  font-size: 15px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 2px 2px 3px #5d6ee2;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 700px) {
+  header {
+    background-image: url("images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header svg {
+    margin-top: 130px;
+  }
+
+  header h1 {
+    width: 70vw;
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    margin: 70px 0px 10px 0px;
+  }
+
+  header p {
+    width: 68vw;
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 10px;
+  }
+
+  header #buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .buttonDonwIOS {
+    margin: 30px 0px 17px 0px;
+    background-color: #fff;
+    border: 1px solid #26bba5;
+    height: 48px;
+    width: 300px;
+    border-radius: 35px;
+    background-color: #26bba5;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+    font-size: 15px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 3px #23af9a;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+  }
+
+  header .buttonDonwMac {
+    margin: 10px 0px 130px 0px;
+    background-color: #fff;
+    border: 1px solid #6074ff;
+    height: 48px;
+    width: 300px;
+    border-radius: 35px;
+    background-color: #6074ff;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+    font-size: 15px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 3px #5d6ee2;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main h1,
+  h2 {
+    width: 67vw;
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    margin: 10px 0px 10px 0px;
+    font-size: 30px;
+  }
+
+  main p {
+    width: 67vw;
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 5px 0px 40px 0px;
+  }
+
+  main img {
+    width: 60vw;
+    margin: 15px 0px 35px 0px;
+  }
+
+  main h2 {
+    font-size: 25px;
+    margin: 10px 0px 5px 0px;
+    /* margin: 5px; */
+  }
+
+  main #clipboard {
+    margin: 90px 0px 10px 0px;
+  }
+
+  main #divices {
+    width: 65vw;
+    margin: 10px 0px 80px 0px;
+  }
+
+  main #workflow {
+    font-size: 22px;
+    margin: 40px 0px 10px 0px;
+  }
+
+  main #google {
+    width: 120px;
+    /* margin: 30px 0px 30px 0px; */
+    margin: 80px 0px 30px 0px;
+  }
+
+  main #ibm {
+    width: 90px;
+    /* margin: 30px 0px 30px 0px; */
+    margin: 20px 0px 30px 0px;
+  }
+
+  main #microsoft {
+    width: 110px;
+    /* margin: 30px 0px 30px 0px; */
+    margin: 20px 0px 30px 0px;
+  }
+
+  main #microsoft {
+    width: 110px;
+    /* margin: 30px 0px 30px 0px; */
+    margin: 20px 0px 30px 0px;
+  }
+
+  main #hp {
+    width: 90px;
+    /* margin: 30px 0px 30px 0px; */
+    margin: 20px 0px 30px 0px;
+  }
+
+  main #vg {
+    width: 80px;
+    /* margin: 30px 0px 30px 0px; */
+    margin: 20px 0px 120px 0px;
+  }
+
+  main .buttonDonwIOS {
+    margin: 1px 0px 17px 0px;
+    background-color: #fff;
+    border: 1px solid #26bba5;
+    height: 48px;
+    width: 300px;
+    border-radius: 35px;
+    background-color: #26bba5;
+    font-weight: bold;
+    color: rgb(243, 241, 241);
+    font-size: 15px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 3px #23af9a;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+  }
+
+  main .buttonDonwMac {
+    margin: 10px 0px 160px 0px;
+    background-color: #fff;
+    border: 1px solid #6074ff;
+    height: 48px;
+    width: 300px;
+    border-radius: 35px;
+    background-color: #6074ff;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+    font-size: 15px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 3px #5d6ee2;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f6f7;
+    padding: 50px 0px 0px 0px;
+  }
+
+  footer svg {
+    transform: scale(0.5);
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  footer a {
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(126, 123, 123);
+    font-weight: bold;
+  }
+
+  footer li {
+    list-style: none;
+  }
+
+  footer #footIcons {
+    margin: 30px;
+  }
+
+  footer img {
+    margin: 0px 15px 0px 15px;
+    cursor: pointer;
+  }
+}

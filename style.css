@@ -33,6 +33,12 @@ header p {
   margin: 10px;
 }
 
+header #buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 header .buttonDonwIOS {
   margin: 30px 0px 17px 0px;
   background-color: #fff;
@@ -103,6 +109,23 @@ main h2 {
   /* margin: 5px; */
 }
 
+main #macAndWords,
+main #imgComp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #macAndWords #snippets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #macAndWords #snippets p {
+  width: 60vw;
+}
+
 main #clipboard {
   margin: 90px 0px 10px 0px;
 }
@@ -112,9 +135,22 @@ main #divices {
   margin: 10px 0px 80px 0px;
 }
 
+main #tools,
+main #tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 main #workflow {
   font-size: 22px;
   margin: 40px 0px 10px 0px;
+}
+
+main #companys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main #google {
@@ -154,8 +190,10 @@ main #vg {
 }
 
 main .buttonDonwIOS {
+  /* opacity: 0; */
+  position: relative;
   margin: 1px 0px 17px 0px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border: 1px solid #26bba5;
   height: 48px;
   width: 300px;
@@ -165,7 +203,27 @@ main .buttonDonwIOS {
   color: rgb(243, 241, 241);
   font-size: 15px;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 2px 2px 2px 3px #23af9a;
+  box-shadow: 0px 5px 15px 0px #23af9a80;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  /* z-index: 2; */
+}
+
+main .buttonDonwIOS::after {
+  content: "";
+  position: relative;
+  margin: 1px 0px 17px 0px;
+  background-color: #fff;
+  border: 1px solid #26bba5;
+  height: 100%;
+  width: 100%;
+  border-radius: 35px;
+  background-color: #26bba5;
+  font-weight: bold;
+  color: rgb(243, 241, 241);
+  font-size: 15px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 5px 0px 0px #3b7068;
   cursor: pointer;
   letter-spacing: 0.5px;
 }
@@ -182,12 +240,12 @@ main .buttonDonwMac {
   color: rgb(241, 241, 241);
   font-size: 15px;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 2px 2px 2px 3px #5d6ee2;
+  box-shadow: 0px 5px 0px 0px #5d6ee2;
   cursor: pointer;
   letter-spacing: 0.5px;
 }
 
-footer {
+#footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,6 +263,12 @@ footer ul {
   align-items: center;
   padding: 0px;
   margin: 0px;
+}
+
+footer ul div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer a {
@@ -225,4 +289,210 @@ footer #footIcons {
 footer img {
   margin: 0px 15px 0px 15px;
   cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  /* body {
+    margin: 1px;
+  } */
+  header {
+    background-image: url("images/bg-header-desktop.png");
+  }
+
+  header p {
+    width: 45vw;
+    height: fit-content;
+  }
+
+  header .buttonDonwMac {
+    margin: 10px 0px 10px 0px;
+  }
+
+  header #buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header #buttons .buttonDonwIOS {
+    margin: 40px 20px 20px 0px;
+  }
+
+  header #buttons .buttonDonwMac {
+    margin: 40px 20px 20px 0px;
+  }
+
+  main #h1KeepTrak {
+    margin: 130px 0px 10px 0px;
+  }
+
+  main p {
+    width: 45vw;
+  }
+
+  main #macAndWords {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+  }
+
+  main #macAndWords img {
+    /* main #imgComp { */
+    position: relative;
+    width: 50vw;
+    height: 40vw;
+    margin: 0px;
+    left: -35px;
+  }
+
+  main #macAndWords #snippets {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  main #snippets h2,
+  #snippets p {
+    width: 60%;
+    text-align: left;
+    margin: 10px 0px 10px 7%;
+  }
+
+  main #snippets h2 {
+    font-size: 25px;
+  }
+
+  main #snippets h2:nth-of-type(1) {
+    margin: 0px 0px 10px 7%;
+    /* margin: 50px 0px 0px 0px; */
+  }
+
+  main #macAndWords #snippets p {
+    width: 24vw;
+    font-size: 16px;
+    margin: 0px 0px 3vw 7%;
+  }
+
+  main #divices {
+    width: 60%;
+    margin: 50px 0px 30px 0px;
+  }
+
+  main #tools {
+    flex-direction: row;
+    margin: 20px 0px 0px 0px;
+  }
+
+  main #tool {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px;
+  }
+
+  main #tool h2 {
+    width: 300px;
+    margin: 40px 0px 20px 0px;
+  }
+
+  main #tool p {
+    width: 350px;
+    margin: 0px;
+  }
+
+  main #companys {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+  }
+
+  main #companys img {
+    margin: 90px 40px;
+  }
+
+  main #companys #google {
+    height: 33px;
+  }
+  main #companys #ibm {
+    height: 33px;
+  }
+
+  main #companys #microsoft {
+    height: 26px;
+  }
+
+  main #companys #hp {
+    height: 33px;
+  }
+
+  main #companys #vg {
+    height: 20px;
+  }
+
+  main #buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  main #buttons button {
+    margin: 0px 15px 150px 15px;
+  }
+
+  #footer {
+    padding: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  footer svg {
+    transform: scale(0.5);
+    margin: 0px 0vw 0px 8vw;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px 8vw 0px 0px;
+  }
+
+  footer ul div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0vw 4vw;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: rgb(126, 123, 123);
+    font-weight: bold;
+    margin: 1vw 0vw;
+    /* width: 110px; */
+  }
+
+  footer #footIcons {
+    margin: 0px 5vw 0px 0vw;
+    width: 200px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  main #macAndWords #snippets p {
+    width: 40vw;
+  }
+
+  main #tools {
+    flex-direction: column;
+  }
+
+  main #buttons button {
+    margin: 0px 15px 150px 15px;
+  }
 }
